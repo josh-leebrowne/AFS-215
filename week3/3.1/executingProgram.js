@@ -6,27 +6,27 @@ class User {
         this.age = age
     }
 
-    doMath = (num1, num2) => {
-        add = (num1 + num2)
-        sub = (num1 - num2)
-        mul = (num1 * num2)
-        div = (num1 / num2)
+    doMath = () => {
+        const add = (this.num1 + this.num2)
+        const sub = (this.num1 - this.num2)
+        const mul = (this.num1 * this.num2)
+        const div = (this.num1 / this.num2)
 
-        mathList = [add, sub, mul, div]
+        const mathList = [add, sub, mul, div]
         
         return mathList
     }
 
-    greeting = (name, age) => {
-        return `Name: ${name}, Age: ${age}`
+    greeting = () => {
+        return `Name: ${this.name}, Age: ${this.age}`
     }
 
-    stringMath = (num1, num2) => {
-        num1Str = str(num1)
-        num2Str = str(num2)
+    stringMath = () => {
+        const num1Str = this.num1.toString()
+        const num2Str = this.num2.toString()
 
-        return (num1 + num1)
+        return (num1Str + num2Str)
     }
 } 
 
-export default User
+module.exports = User

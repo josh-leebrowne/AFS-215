@@ -1,3 +1,5 @@
+const { it } = require('mocha')
+
 const expect = require('chai').expect
 
 function calculator(num1, num2, operator){

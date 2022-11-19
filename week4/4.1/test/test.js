@@ -1,6 +1,3 @@
-const { it } = require('mocha')
-
-const expect = require('chai').expect
 
 it('expect passing test', function() {
     expect(true).to.equal(true)// expected true to equal false

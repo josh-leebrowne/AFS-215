@@ -1,10 +1,11 @@
 class Data:
-    def __init__(self):
+    def __init__(self, num):
         self.list = []
+        self.num = num
 
 
-    def strList(self, num):
-        self.list.append(int)
+    def strList(self):
+        self.list.append(self.num)
         return self
 
     def searchList(self):

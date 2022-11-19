@@ -1,7 +1,3 @@
-const { it } = require('mocha')
-
-const expect = require('chai').expect
-
 function calculator(num1, num2, operator){
     if (typeof num1 != 'number' || typeof num2 != 'number'){
         return "Not a valid number"
